@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     }
     
     // Print the factorial result
-    printf("The factorial of %d is %d\n", number, factorial);
+    printf("The factorial of %d is: %d\n", number, factorial);
 
     // Check if the number is prime
     int count = 0;
