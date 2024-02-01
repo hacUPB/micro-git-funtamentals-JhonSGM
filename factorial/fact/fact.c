@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     
     /* Verify that the entered number is greater than or equal to zero */
     if (number < 0) {
-        fprintf(stderr, "El número debe ser mayor o igual a cero.\n");
+        fprintf(stderr, "The number must be greater than or equal to zero\n");
         return 1;
     }
 
@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     }
     
     // Print the factorial result
-    printf("El factorial de %d es %d\n", number, factorial);
+    printf("The factorial of %d is %d\n", number, factorial);
 
     // Check if the number is prime
     int count = 0;
@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
     
     // Print the prime number result
     if (count == 2) {
-        printf("%d es un número primo\n", number);
+        printf("%d is a prime number\n", number);
     } else {
         printf("%d no es un número primo\n", number);
     }
