@@ -7,55 +7,39 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     
-    int number = atoi(argv[1]); //Convert the console input argument to an integer
+    int number = atoi(argv[1]); // Convert the console input argument to an integer
     
-    /*It must be verified that the entered number is greater than or equal to zero*/
-    
-    /*Implement the function that calculates the factorial of the input argument*/
-    
-    /*Print the result*/
-    
-    /*Implement the function that calculates if the argument is a prime number*/
-
-    /*Print the result*/
-
-    /*It must be verified that the entered number is greater than or equal to zero*/
-    if(number < 0)
-    {
-        perror("El núnmero debe ser mayor a cero");
-        exit(1);
+    /* Verify that the entered number is greater than or equal to zero */
+    if (number < 0) {
+        fprintf(stderr, "El número debe ser mayor o igual a cero.\n");
+        return 1;
     }
 
-    /*Implement the function that calculates the factorial of the input argument*/
+    // Calculate factorial
     int factorial = 1;
     int b;
-    for (b = number; b > 1; b--)
-    {
+    for (b = number; b > 1; b--) {
         factorial *= b;
     }
     
-    /*Print the result*/
-    printf("El factorial de %d es %d",number,factorial);
+    // Print the factorial result
+    printf("El factorial de %d es %d\n", number, factorial);
 
-    /*Implement the function that calculates if the argument is a prime number*/
-    int count = 0,index = 1;
-    while (index < number)
-    {
-        if(number%index == 0)
-            {
+    // Check if the number is prime
+    int count = 0;
+    int index;
+    for (index = 1; index <= number; index++) {
+        if (number % index == 0) {
             count++;
-            }
-        index++;
+        }
     }
     
-    /*Print the result*/
-    if(count == 1)
-    {
-        printf("%d es número primo\n",number);
-    }
-    else
-    {
-        printf("%d no es número primo\n",number);
+    // Print the prime number result
+    if (count == 2) {
+        printf("%d es un número primo\n", number);
+    } else {
+        printf("%d no es un número primo\n", number);
     }
     
     return 0;
+}
