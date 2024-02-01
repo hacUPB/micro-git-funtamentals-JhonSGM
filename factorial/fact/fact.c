@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     if (count == 2) {
         printf("%d is a prime number\n", number);
     } else {
-        printf("%d no es un número primo\n", number);
+        printf("%d is not a prime number\n", number);
     }
     
     return 0;
