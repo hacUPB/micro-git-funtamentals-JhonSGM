@@ -7,13 +7,13 @@ Descripción: Se clona un script en C desde un repositorio de GitHub. Se adicion
 [Enlace a mi perfil de GitHUb](https://github.com/hacUPB/micro-git-funtamentals-JhonSGM).
 
 COMANDOS: 
-1.  Clonar  repositorio de la evaluación.
+-Clonar  repositorio de la evaluación:
 git clone 
-2. Adicionar el archivo `fact.c` al STAGE.
+-Adicionar el archivo `fact.c` al STAGE:
 git add
-3. Realizar un commit.
+-Realizar un commit:
 git commit 
-3. Sincronizar con el repositorio remoto.
+Sincronizar con el repositorio remoto:
 git push
 
 
