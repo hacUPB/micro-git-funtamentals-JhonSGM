@@ -27,17 +27,16 @@ int main(int argc, char *argv[]) {
 
     // Check if the number is prime
     int count = 0;
-    int index;
-    for (index = 1; index <= number; index++) {
-        if (number % index == 0) {
-            count++;
-        }
-    }
-    
-    // Print the prime number result
+     for (int index = 1; index <= number; index++) {
+         if (number % index == 0) {
+        count++;
+            }
+            }
+
+      // Print the prime number result
     if (count == 2) {
         printf("%d is a prime number\n", number);
-    } else {
+       } else {
         printf("%d is not a prime number\n", number);
     }
     
