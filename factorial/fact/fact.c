@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    if (argc < 2) {
+    if (argc != 2) {
         fprintf(stderr,"Usage: program <number>\n");
         return 1;
     }
@@ -16,14 +16,14 @@ int main(int argc, char *argv[]) {
     }
 
     // Calculate factorial
-    int factorial = 1;
-    int b;
+    long long int factorial = 1;
+    long long int b;
     for (b = number; b > 1; b--) {
         factorial *= b;
     }
     
     // Print the factorial result
-    printf("The factorial of %d is: %d\n", number, factorial);
+    printf("The factorial of %lld is: %lld\n", number, factorial);
 
     // Check if the number is prime
     int count = 0;
